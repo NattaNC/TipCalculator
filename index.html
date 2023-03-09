@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="images/logo.svg" alt="logo-splitter">
+    </div>
+    <main>
+        <div class="bill">
+            <p>
+                Bill
+            </p>
+            <input type="number" id="bill-price">
+        </div>
+        <div class="select-tip">
+            <p>
+                Select Tip
+            </p>
+            <div class="line-one">
+                <button id="buttons-container">5</button>
+                <button id="buttons-container">10</button>
+            </div>
+            <div class="line-two">
+                <button id="five-teen-percent">15%</button>
+                <button id="twenty-five-percent">25%</button>
+            </div>
+            <div class="line-three">
+                <button id="fifty-percent">50%</button>
+                <input type="number" id="custom" placeholder="Custom">
+            </div>
+        </div>
+        <div class="number-people">
+            <p>
+                Number of People %
+            </p>
+            <input type="number" id="number-people">
+        </div>
+        <div class="resultado">
+            <div class="tip-amount">
+                <div>
+                    <h3>
+                        Tip Amount
+                    </h3>
+                    <span>
+                        / person
+                    </span>
+                </div>
+                <h2>
+                    $4.27
+                </h2>
+            </div>
+            <div class="total">
+                <div>
+                    <h3>
+                        Total
+                    </h3>
+                    <span>
+                        / person
+                    </span>
+                </div>
+                <h2>
+                    $32.79
+                </h2>
+            </div>
+            <button class="calcular">
+                Calcular
+            </button>
+            <button class="reset">
+                Reset
+            </button>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

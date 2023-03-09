@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Space Mono', monospace;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: hsl(185, 41%, 84%);
+}
+
+/* Logo */
+.logo {
+    padding: 2rem;
+}
+
+/* Generico */
+button {
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(0, 0%, 100%);
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: .5rem;
+}
+
+button:hover {
+    background-color: hsl(172, 67%, 45%);
+    transition: .5s;
+}
+
+input {
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    background-repeat: no-repeat;
+    background-position: 5%;
+    border-radius: .5rem;
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-align: right;
+    padding: .5rem;
+    border: none;
+    width: 100%;
+}
+
+.select-tip, .number-people, .resultado {
+    margin-top: 2rem;
+}
+
+/* Principal */
+main {
+    background-color: white;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+p {
+    color: hsl(186, 14%, 43%);
+    margin-bottom: 1rem;
+}
+
+/* DIV --- BILL */
+.bill > input {
+    background-image: url(../images/icon-dollar.svg);
+}
+
+
+/* DIV --- Select tip */
+.line-one,.line-two, .line-three {
+    display: flex;
+    justify-content: space-between;
+}
+
+.line-one > button, .line-two > button, .line-three > button, input#custom {
+    width: 45%;
+    margin-bottom: 1rem;
+
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#custom {
+    text-align: center;
+}
+
+/* DIV --- Number People */
+.number-people > input {
+    background-image: url(../images/icon-person.svg);
+}
+
+
+/* Resultado */
+.resultado {
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 1rem;
+    color: white;
+    padding: 2rem;
+}
+
+/* DIV ---  Tip amount and Total*/
+.tip-amount, .total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 1rem;
+}
+
+.tip-amount h2, .total h2 {
+    color: hsl(172, 67%, 45%);
+}
+
+.reset {
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(172, 67%, 45%);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.reset:hover {
+    background-color: hsl(183, 100%, 15%);
+}
+
+.calcular {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.calcular:hover {
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(172, 67%, 45%);
+    transition: .5s;
+}
