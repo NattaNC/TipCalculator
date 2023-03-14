@@ -16,15 +16,15 @@
             <p>
                 Bill
             </p>
-            <input type="number" id="bill-price">
+            <input type="number" id="bill-price" placeholder="0.0">
         </div>
         <div class="select-tip">
             <p>
                 Select Tip
             </p>
             <div class="line-one">
-                <button id="buttons-container">5</button>
-                <button id="buttons-container">10</button>
+                <button id="five-percent">5%</button>
+                <button id="ten-percent">10%</button>
             </div>
             <div class="line-two">
                 <button id="five-teen-percent">15%</button>
@@ -39,7 +39,7 @@
             <p>
                 Number of People %
             </p>
-            <input type="number" id="number-people">
+            <input type="number" id="number-people" placeholder="0">
         </div>
         <div class="resultado">
             <div class="tip-amount">
@@ -51,8 +51,8 @@
                         / person
                     </span>
                 </div>
-                <h2>
-                    $4.27
+                <h2 id="value-tip-amount">
+                    0.0
                 </h2>
             </div>
             <div class="total">
@@ -65,12 +65,9 @@
                     </span>
                 </div>
                 <h2>
-                    $32.79
+                    0.0
                 </h2>
             </div>
-            <button class="calcular">
-                Calcular
-            </button>
             <button class="reset">
                 Reset
             </button>
